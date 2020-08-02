@@ -3,11 +3,13 @@ import UserList from './components/user-list'
 import MonthList from './components/month-list'
 import styled from 'styled-components'
 
+
 const Container = styled.div `
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
+  height: 100vh;
 `
 
 function App() {

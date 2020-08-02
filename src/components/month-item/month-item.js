@@ -3,9 +3,15 @@ import styled, {css} from 'styled-components'
 
 const ListItem = styled.div `
   list-style: none;
-  border: 1px solid black;
+  border: 0px solid black;
   padding: 10px 15px;
   border-radius: 6px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: all .5s;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  text-transform: uppercase;
   &:hover {${props => 
         ((props.numberOfUsers > 10) && css `background-color: #FF4B4B;`) ||
         ((props.numberOfUsers > 6) && css `background-color: #9FFFB7;`) ||
