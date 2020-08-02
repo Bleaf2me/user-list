@@ -15,11 +15,11 @@ const ListItem = styled.div `
   &:hover {${props => 
         ((props.numberOfUsers > 10) && css `background-color: #FF4B4B;`) ||
         ((props.numberOfUsers > 6) && css `background-color: #9FFFB7;`) ||
-        ((props.numberOfUsers > 2) && css `background-color: #9AD2FF;`) ||
+        ((props.numberOfUsers > 2) && css `background-color: #007BF2;`) ||
         (css `background-color: #CCCCCC;`)
    }}
 `
-const MonthItem = ({month, ShowUsers, numberOfUsers }) => {
+const MonthItem = ({ month, ShowUsers, numberOfUsers }) => {
 
   return <ListItem
             onMouseEnter={ ShowUsers }

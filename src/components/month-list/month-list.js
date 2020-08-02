@@ -10,12 +10,12 @@ const MonthListWrapper = styled.div `
 `
 const MonthList = ({ monthList, ShowUsers, numberOfUsers }) => {
   
-  const el = monthList.map(({id, name}) => {
+  const el = monthList.map(({ id, name }) => {
     return <MonthItem
-             id={id}
-             key={id}
-             month={name}
-             ShowUsers={() => ShowUsers(id)}
+             id={ id }
+             key={ id }
+             month={ name }
+             ShowUsers={ () => ShowUsers(id) }
              numberOfUsers={ numberOfUsers }
             />
   })

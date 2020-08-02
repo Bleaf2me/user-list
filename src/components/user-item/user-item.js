@@ -13,11 +13,11 @@ const UserCard = styled.div `
   font-size: 18px;
 `
 
-const UserItem = ({ lastName, firstName, dob }) => {
+const UserItem = ({ lastName, firstName }) => {
   
   return (
     <UserCard>
-      <div>{firstName} {lastName}</div>
+      <div>{ firstName } { lastName }</div>
     </UserCard> )
 }
 
